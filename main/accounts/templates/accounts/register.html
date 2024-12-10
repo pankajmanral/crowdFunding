@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+
+</head>
+<body class="h-screen w-full flex flex-col justify-center items-center">
+    
+    <h1 class="font-bold text-2xl mb-2"><span class="font-normal"><i class="ri-shield-user-line me-2"></i></span></i>Register Form</h1>
+
+    <form action="" method="POST" class="flex flex-col justify-center items-center">
+
+        {% csrf_token %}
+
+        <div class="flex flex-wrap gap-2 w-72 justify-center">
+            {{form.first_name}}
+            {{form.last_name}}
+            {{form.username}}
+            {{form.phone_number}}
+            {{form.email}}
+            {{form.password}}
+            <label for="" class="border border-gray-300 border-2 rounded-md px-3">Enter DOB</label><input type="date" name="dob">
+            {{form.gender}}
+        </div>
+
+
+        <input type="submit" value="Register" class="border border-gray-300 border-2 rounded-md px-3 h-10 mt-3 cursor-pointer hover:bg-gray-300 hover:text-black">
+    </form>
+
+</body>
+</html>
