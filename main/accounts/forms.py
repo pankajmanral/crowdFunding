@@ -8,7 +8,7 @@ class LoginForm(ModelForm):
         fields = ['username','password'] 
         widgets = {
             'username' : forms.TextInput(attrs={'placeholder' : 'Enter username','class':'border border-gray-200 border-2 rounded-md h-10 w-full px-3 '}),
-            'password' : forms.TextInput(attrs={'placeholder' : 'Enter password','class':'border border-gray-200 border-2 rounded-md h-10 w-full px-3 '}),
+            'password' : forms.PasswordInput(attrs={'placeholder' : 'Enter password','class':'border border-gray-200 border-2 rounded-md h-10 w-full px-3 '}),
         }
 
 class RegisterForm(ModelForm):

@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+{% extends 'index.html' %}
+{% block content %}
 
-</head>
-<body class="h-screen w-full flex flex-col justify-center items-center">
+<div class="h-screen w-full flex flex-col justify-center items-center">
     
     <h1 class="font-bold text-2xl mb-2"><span class="font-normal"><i class="ri-shield-user-line me-2"></i></span></i>Register Form</h1>
 
@@ -32,4 +25,5 @@
     </form>
 
 </body>
-</html>
+
+{% endblock %}
